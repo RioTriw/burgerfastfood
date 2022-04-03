@@ -1,0 +1,50 @@
+header.main-header
+	a(href='/').logo
+		span.logo-mini
+			<b>B</b> GR
+		span.logo-lg
+			<b>BURGER</b>
+	nav(role='navigation').navbar.navbar-static-top
+		a(href='#', role='button', data-toggle='offcanvas').sidebar-toggle
+			span.sr-only Toggle Navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		div.navbar-custom-menu
+			ul.nav.navbar-nav
+
+				li.dropdown.notifications-menu
+					a(href='#',data-toggle='dropdown').dropdown-toggle
+						i.fa.fa-bell-o
+						span.label.label-warning
+							| 1
+					ul.dropdown-menu
+						li.header
+							| You have 1 notifications
+						li
+							ul.menu
+								li
+									a(href='#')
+										i.fa.fa-users.text-aqua
+										| 1 new orders
+						li.footer
+							a(href='#')
+								| View All
+
+				li.dropdown.user.user-menu
+					a(href='#',data-toggle='dropdown').dropdown-toggle
+						img(src='/adminlte/dist/img/burger.png',alt='User Image').user-image
+						span.hidden-xs
+							| Admin
+					ul.dropdown-menu
+						li.user-header
+							img(src='/adminlte/dist/img/burger.png',alt='User Image').img-circle
+							p
+								| Admin
+								small
+									| Admin Burger
+
+						li.user-footer
+							.pull-right
+								a(href='/logout').btn.btn-default.btn-flat
+									| Log Out
